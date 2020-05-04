@@ -22,17 +22,15 @@
     color: gray;
     border: solid 2px rgba(128, 128, 128, 0.514);
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     transition: all 300ms ease-in-out;
     &:hover {
       background-color: rgba(0, 0, 0, 0.13);
     }
-    
   }
   .pressed {
     border: solid 2px purple;
     color: purple;
   }
 }
-
