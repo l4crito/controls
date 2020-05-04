@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   .status {
     min-height: 4200px;
     display: flex;
@@ -30,7 +30,11 @@
     }
   }
   .pressed {
+    background-color: white;
     border: solid 2px purple;
     color: purple;
+    &:hover{
+        background-color: white;
+    }
   }
 }
