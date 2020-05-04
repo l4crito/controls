@@ -1,0 +1,9 @@
+.item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item div {
+  min-width: 200px;
+  width: 200px;
+}

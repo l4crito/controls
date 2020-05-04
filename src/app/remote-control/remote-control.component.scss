@@ -1,0 +1,38 @@
+.button-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .status {
+    min-height: 4200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .custom {
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: gray;
+    border: solid 2px rgba(128, 128, 128, 0.514);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.13);
+    }
+    
+  }
+  .pressed {
+    border: solid 2px purple;
+    color: purple;
+  }
+}
+

@@ -1,0 +1,6 @@
+<div class="button-container">
+    <button class="custom" (mousedown)="touchLeft()" (mouseup)="untouchLeft()" tabindex="-1"
+        [ngClass]="{'pressed': leftPressed}">▲</button>
+    <button class="custom" (mousedown)="touchRight()" (mouseup)="untouchRight()" tabindex="-1"
+        [ngClass]="{'pressed': rightPressed}">▼</button>
+</div>

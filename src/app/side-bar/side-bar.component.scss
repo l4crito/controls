@@ -1,0 +1,81 @@
+@import "../../variables.scss";
+
+.navbar {
+  padding-top: 2rem;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  background-color: $bg-primary;
+  width: $side-width;
+  color: white;
+  transition: width 300ms ease-in-out;
+  box-shadow: 5px 5px 5px grey;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  .item {
+    margin-bottom: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+    img {
+      transition: all 300ms ease-in-out;
+      width: calc(#{$side-width * 0.6});
+      margin: calc(#{$side-width * 0.2});
+      filter: grayscale(100%);
+    }
+    span {
+      display: none;
+    }
+    &:hover {
+      img {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  &:hover {
+    width: calc(#{$side-width} * 2.7);
+    .item {
+      span {
+        min-width: 3rem;
+        display: block;
+        margin-left: 0.8rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media all and(max-width:550px) {
+  .navbar {
+    box-shadow: 0 -3px 10px rgb(170, 164, 164);
+    border-top-right-radius: 0;
+    padding: 0;
+    width: 100%;
+    bottom: 0;
+    height: $side-width;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .item {
+      margin: 0;
+      width: fit-content;
+      align-items: center;
+      justify-content: center;
+      span {
+        display: none;
+      }
+    }
+    &:hover {
+      width: 100%;
+      .item {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
