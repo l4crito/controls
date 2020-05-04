@@ -15,7 +15,6 @@ export class RemoteControlComponent implements OnInit {
 
   touchLeft() {
     this.leftPressed = true;
-    console.log(this.leftPressed)
   }
   untouchLeft() {
     this.leftPressed = false;
